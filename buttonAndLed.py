@@ -20,7 +20,7 @@ buttonThreshold=5
 def setupPins():
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(buttonPin, GPIO.IN)
+    GPIO.setup(buttonPin, GPIO.IN, , pull_up_down=GPIO.PUD_DOWN)
     GPIO.setup(ledPin, GPIO.OUT)
 
 # アクションの実行
